@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel ./src --out-dir ./build",
+    "build": "babel ./src --out-dir ./build",
     "postbuild": "prisma generate",
     "start": "node ./build/index.js",
     "dev": "nodemon --exec npx babel-node src/index.js",
